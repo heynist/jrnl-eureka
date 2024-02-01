@@ -1,62 +1,56 @@
 <html>
-<body bgcolor="#ffffff">
+<body>
     <div id="form_container">
-		<form id="form_psc" class="appnitro" method="post" action="" onsubmit="return false;">
+		<form id="form_psc" method="post" action="" onsubmit="return false;">
 			<ul>
-                <li id="li_1">
-                    <label class="description" for="element_1">Inzetbedrag nieuwe positie</label>
+                <li id="li_inzetbedrag">
+                    <label class="description" for="inzetbedrag_hdr">Inzetbedrag nieuwe positie</label>
                     <span class="symbol">$</span>
                     <span>
-                        <input id="element_1_1" name="element_1_1" class="element text currency" size="19" value="" type="text">		
-                        <label for="element_1_1">Dollars</label>
+                        <input id="inzetbedrag" name="inzetbedrag" class="element text currency" size="19" value="" type="text">		
+                        <label for="inzetbedrag">Dollars</label>
                     </span>
-                    <p class="guidelines" id="guide_1"><small>Hoeveel wens je in te zetten.</small></p>
                 </li>
-                <li id="li_6">
-                    <label class="description" for="element_6">Risico</label>
+                <li id="li_risico">
+                    <label class="description" for="risico_hdr">Risico</label>
                     <span class="symbol">%</span>
                     <span>
-                        <input id="element_6_1" name="element_6_1" class="element text small" type="text" maxlength="255" value="1">
-                        <label for="element_6_1"></label>
+                        <input id="risico" name="risico" class="element text small" type="text" maxlength="255" value="1">
+                        <label for="risico"></label>
                     </span>
-                    <p class="guidelines" id="guide_6"><small>Hoeveel risico in procent wil je toepassen op je inzetbedrag.</small></p>
                 </li>
-                <li id="li_5">
-                    <label class="description" for="element_5">Type Positie</label>
+                <li id="li_type">
+                    <label class="description" for="type_positie_hdr">Type Positie</label>
                     <div>
-                        <select class="element select medium" id="element_5" name="element_5"> 
+                        <select class="element select medium" id="type_positie" name="type_positie"> 
                             <option value="1" selected="selected">Long</option>
                             <option value="2">Short</option>
                         </select>
                     </div>
-                    <p class="guidelines" id="guide_5"><small>Selecteer het type van positie je gaat nemen.</small></p> 
                 </li>		
-                <li id="li_2">
-                    <label class="description" for="element_2">Instapprijs</label>
+                <li id="li_instapprijs">
+                    <label class="description" for="instapprijs_hdr">Instapprijs</label>
                     <span class="symbol">$</span>
                     <span>
-                        <input id="element_2_1" name="element_2_1" class="element text currency" size="19" value="" type="text">		
-                        <label for="element_2_1">Dollars</label>
+                        <input id="instapprijs" name="instapprijs" class="element text currency" size="19" value="" type="text">		
+                        <label for="instapprijs">Dollars</label>
                     </span>
-                    <p class="guidelines" id="guide_2"><small>De prijs waar je positie wil nemen.</small></p> 
                 </li>
-                <li id="li_3">
-                    <label class="description" for="element_3">Verkoopprijs (TP)</label>
+                <li id="li_tp">
+                    <label class="description" for="tp_hdr">Verkoopprijs (TP)</label>
                     <span class="symbol">$</span>
                     <span>
-                        <input id="element_3_1" name="element_3_1" class="element text currency" size="19" value="" type="text">		
-                        <label for="element_3_1">Dollars</label>
+                        <input id="tp" name="tp" class="element text currency" size="19" value="" type="text">		
+                        <label for="tp">Dollars</label>
                     </span>
-                    <p class="guidelines" id="guide_3"><small>De prijs waar je je positie wil sluiten.</small></p> 
         		</li>
-                <li id="li_4">
-                    <label class="description" for="element_4">Stop Loss </label>
+                <li id="li_sl">
+                    <label class="description" for="sl_hdr">Stop Loss </label>
                     <span class="symbol">$</span>
                     <span>
-                        <input id="element_4_1" name="element_4_1" class="element text currency" size="19" value="" type="text">	
-                        <label for="element_4_1">Dollars</label>
+                        <input id="sl" name="sl" class="element text currency" size="19" value="" type="text">	
+                        <label for="sl">Dollars</label>
                     </span>
-                    <p class="guidelines" id="guide_4"><small>De prijs waar je automatisch je positie wil laten sluiten met verlies.</small></p> 
                 </li>
                 <li class="buttons">
                     <input type="hidden" name="form_id" value="psc">
@@ -68,6 +62,40 @@
 			Positie grootte: 0 
 		</div>
 	</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simple Form</title>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    
+    <form action="#" method="post">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
 
 </body>
 </html>
